@@ -1,0 +1,2 @@
+# Bibliotecas necessárias para o Fast Lane
+pygame>=2.5.2
