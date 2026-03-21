@@ -3,6 +3,11 @@
 **Instituição:** Centro Universitário Internacional UNINTER
 
 Este projeto é um simulador de corrida desenvolvido em **Python** utilizando a biblioteca **Pygame**. O objetivo é desviar dos obstáculos e inimigos o maior tempo possível, acumulando pontuação que é salva de forma persistente.
+<img width="572" height="351" alt="fastlane1" src="https://github.com/user-attachments/assets/e27bec6e-1d07-40e5-ae60-1e8b3f198e45" />
+
+<img width="569" height="345" alt="fastlanerecord1" src="https://github.com/user-attachments/assets/9a492b54-0797-4c4d-a25e-a8b083db6985" />
+
+<img width="574" height="348" alt="image" src="https://github.com/user-attachments/assets/79ced743-b89c-4103-9046-c458ffea65e5" />
 
 ---
 
