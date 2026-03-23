@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 from code.Background import Background
 from code.Enemy import Enemy
 from code.Player import Player
@@ -8,7 +6,7 @@ class EntityFactory:
     @staticmethod
     def get_entity(entity_name: str, position=(0, 0)):
         if entity_name == 'Estrada':
-            # Retornamos duas partes da estrada para o efeito infinito
+            # Retorna-se duas partes da estrada para o efeito infinito
             return [Background('Estrada', (0, 0)), 
                     Background('Estrada', (0, -324))] # -324 é o WIN_HEIGHT
         

@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 import pygame
 from code.Const import ENTITY_SPEED, WIN_HEIGHT, WIN_WIDTH, \
     PLAYER_KEY_UP, PLAYER_KEY_DOWN, PLAYER_KEY_LEFT, PLAYER_KEY_RIGHT
@@ -8,7 +6,7 @@ from code.Entity import Entity
 class Player(Entity):
     def __init__(self, name: str, position: tuple):
         super().__init__(name, position)
-        # Guardamos a imagem original (reta) para usar como base na rotação
+        # Guarda a imagem original (reta) para usar como base na rotação
         self.original_surf = self.surf 
 
     def move(self):

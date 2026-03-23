@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 import sqlite3
 
 class DBProxy:
@@ -8,7 +6,7 @@ class DBProxy:
         self.connection = sqlite3.connect(f"{self.db_name}.db")
         self.cursor = self.connection.cursor()
         
-        # Cria a tabela se ela não existir
+        # Cria a tabela se ela não existir no db
         self.cursor.execute('''
             CREATE TABLE IF NOT EXISTS scoreboard (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,

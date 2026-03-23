@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 import sys
 import pygame
 from pygame import Surface, Rect
@@ -14,7 +12,7 @@ class Score:
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def show(self):
-        # 1. Busca os dados do Banco usando o Proxy (Aula 5)
+        # 1. Busca os dados do Banco usando o Proxy
         db_proxy = DBProxy('MeuJogoScore')
         list_score = db_proxy.retrieve_top10()
         db_proxy.close()

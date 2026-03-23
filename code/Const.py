@@ -9,7 +9,7 @@ C_YELLOW = (255, 255, 0)
 WIN_WIDTH = 576
 WIN_HEIGHT = 324
 
-# Opções do Menu (Exigência do Trabalho)
+# Opções do Menu
 MENU_OPTION = ('INICIAR CORRIDA',
                'VER RECORDES',
                'SAIR')
@@ -26,7 +26,7 @@ ENTITY_SPEED = {
 EVENT_ENEMY = pygame.USEREVENT + 1
 SPAWN_TIME = 2000  # Surgir um inimigo a cada 2 segundos
 
-# Teclas de Controle (Exigência do Trabalho)
+# Teclas de Controle
 PLAYER_KEY_UP = pygame.K_w
 PLAYER_KEY_DOWN = pygame.K_s
 PLAYER_KEY_LEFT = pygame.K_a

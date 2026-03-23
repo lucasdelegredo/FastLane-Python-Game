@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 import sys
 import pygame
 from pygame import Surface, Rect
@@ -8,11 +6,9 @@ from code.Const import WIN_WIDTH, WIN_HEIGHT, C_YELLOW, C_WHITE, MENU_OPTION
 class Menu:
     def __init__(self, window: Surface):
         self.window = window
-        # Se tiver uma imagem de fundo para o menu, mude o nome aqui
         try:
             self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()
         except:
-            # Caso não tenha a imagem ainda, cria um fundo preto
             self.surf = pygame.Surface((WIN_WIDTH, WIN_HEIGHT))
             self.surf.fill((0, 0, 0))
             
@@ -20,15 +16,12 @@ class Menu:
         self.menu_index = 0  # Indica qual opção está selecionada
 
     def run(self):
-        # Opcional: tocar música do menu
-        # pygame.mixer_music.load('./asset/Menu.mp3')
-        # pygame.mixer_music.play(-1)
 
         while True:
             # 1. Desenha o fundo
             self.window.blit(source=self.surf, dest=self.rect)
 
-            # 2. Desenha o Título e os Comandos (EXIGÊNCIA DO TRABALHO)
+            # 2. Desenha o Título e os Comandos
             self.draw_text(40, "FAST LANE: CORRIDA", C_YELLOW, (WIN_WIDTH / 2, 50))
             self.draw_text(18, "CONTROLOS: W, A, S, D para Dirigir", C_WHITE, (WIN_WIDTH / 2, 100))
 

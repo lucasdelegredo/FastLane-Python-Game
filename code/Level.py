@@ -1,5 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 import random
 import sys
 import pygame
@@ -30,14 +28,11 @@ class Level:
         self.score = 0
         self.speed_multiplier = 1.0  # Para a aceleração progressiva
 
-        pygame.mixer.music.load('./asset/MusicaTema.mp3') # Certifique-se de ter o arquivo
+        pygame.mixer.music.load('./asset/MusicaTema.mp3')
         pygame.mixer.music.set_volume(0.5) # Volume em 50%
         pygame.mixer.music.play(-1) # O -1 faz a música tocar em loop infinito
 
     def run(self):
-        # Música da fase (opcional, se tiver o arquivo)
-        # pygame.mixer_music.load(f'./asset/{self.name}.mp3')
-        # pygame.mixer_music.play(-1)
         
         clock = pygame.time.Clock()
         

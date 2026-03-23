@@ -22,8 +22,8 @@ class Game:
                 from code.DBProxy import DBProxy
 
                 # Exemplo de salvamento após o jogo
-                pontos_finais = 150 # Esse valor viria do level.run()
-                nome_piloto = "PILOT" # Você pode criar um input simples no pygame para isso
+                pontos_finais = level.run() # Esse valor viria do level.run()
+                nome_piloto = "PILOT" 
 
                 db = DBProxy("MeuJogoScore")
                 data = {
